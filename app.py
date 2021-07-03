@@ -148,7 +148,7 @@ class PerformanceApp(QWidget):
         X = input_.reshape(1, -1)
         
 
-        with open("C:\RESERVOIR\AI_ML\student\model.pkl", "rb") as file_object:
+        with open(".\model.pkl", "rb") as file_object:
             classifier = pickle.load(file_object)
 
         prediction = classifier.predict(X)
